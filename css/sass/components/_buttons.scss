@@ -1,0 +1,33 @@
+.btn {
+    width: 120px !important;
+    background-color: $stClr;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 8px
+}
+.toggler {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: $stClr;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: none;
+    @media #{$maxMobile} {
+        display: block;
+    }
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FFF;
+        border-radius: 5px;
+        &:not(:last-child) {
+            margin-bottom: 7px
+        }
+    }
+}

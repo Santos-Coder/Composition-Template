@@ -1,0 +1,103 @@
+.footer {
+    background-color: rgba($ndClr, 0.3);
+    margin-top: 50px;
+    h4 {
+        color: $rdClr
+    }
+    .blog {
+        @media #{$minMid} {
+        width: 50%;
+        float: $floatL;
+        padding: 20px;
+        }
+        .blog-det {
+            overflow: hidden;
+            div {
+                float: $floatL;
+                width: 120px;
+                height: 120px;
+                padding: 5px;
+                border: 1px solid $ndClr;
+                margin: 0 10px 30px 0;
+                img {
+                    width: 100%;
+                    border-radius: 0
+                }
+            }
+            h4 {
+                margin-top: 10px;
+                margin-bottom: 0;
+                color: $stClr
+            }
+            p {
+               color: $ndClr;
+                margin-top: 5px;
+                line-height: 1.5
+            }
+        }
+        }
+    .det {
+        @media #{$minMid} {
+        width: 25%;
+        float: $floatL;
+        padding: 20px;
+        }
+        li {
+            color: $ndClr;
+            padding: 2px;
+            a {
+                text-decoration: none;
+                color: $stClr
+            }
+        }
+        h4:not(:first-of-type) {
+            margin-bottom: 10px;
+            color: $ndClr
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 3px;
+            color: $ndClr
+        }
+    }
+    .cont {
+        @media #{$minMid} {
+        width: 25%;
+        float: $floatL;
+        padding: 20px;
+        }
+        input {
+            border-radius: 5px;
+            border: none;
+            padding: 8px;
+            width: 100%;
+            margin-bottom: 10px
+        }
+        textarea {
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            padding: 8px;
+            display: block
+        }
+    }
+    .bot {
+        width: 90%;
+        height: auto;
+        margin: 3px auto;
+        color: $ndClr;
+        border-top: 1px solid $ndClr;
+        padding: 10px 0;
+        overflow: hidden;
+        p {
+            @media #{$minMid} {
+            float: $floatL
+        }
+        }
+        p:last-of-type {
+            @media #{$minMid} {
+            float: $floatR
+        }
+        }
+    }
+}

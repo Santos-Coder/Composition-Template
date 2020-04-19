@@ -1,0 +1,117 @@
+.slider {
+    q {
+        font-size: 17px;
+        font-style: italic;
+        color: #333;
+        line-height: 1.7;
+        width: 90%;
+        margin: 30px auto;
+        display: block;
+        text-align: center
+    }
+    img {
+        width: 100%
+    }
+    ul {
+        margin: 5px auto;
+        text-align: center;
+    li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: $ndClr;
+        border: 2px solid $ndClr;
+        border-radius: 50%;
+        cursor: pointer;
+        &.active,
+        &:hover {
+            background: #FFF;
+            border: 2px solid #222;
+        }
+        
+    }
+}
+}
+
+.services {
+    .serv-box {
+        @media #{$minMid} {
+            float: $floatL;
+            width: (100% / 3);
+            padding: 15px;
+        }
+        i {
+            font-size: 22px;
+            margin: 0 5px;
+            color: $rdClr;
+            @media #{$maxMobile} {
+                display: block;
+                margin-bottom: 15px
+            }
+        }
+        h3 {
+            color: $rdClr;
+            font-size: 22px;
+            margin-bottom: 3px
+        }
+        p {
+            color: $ndClr;
+            line-height: 1.4
+        }
+        a {
+            text-decoration: none;
+            color: $stClr
+        }
+    }
+}
+.players {
+    .player-box {
+            padding: 10px;
+            color: $ndClr;
+            margin-bottom: 30px;
+        @media #{$minSmall} {
+            float: $floatL;
+            width: (100% / 2);
+            img {
+            width: 100%
+        }         
+        }
+        @media #{$minMid} {
+            width: (100% / 3);
+        }
+        @media #{$minLarg} {
+            width: (100% / 5);
+        }
+        h3 {
+            font-weight: normal;
+            span {
+                font-weight: bold
+            }
+        }
+        p {
+            line-height: 1.4
+        }
+        a {
+            text-decoration: none;
+            color: $stClr
+        }
+    }
+}
+.lorem {
+    img {
+        @media #{$minMid} {
+        float: $floatL;
+        width: (94% / 3);
+        max-width: 100%;
+        &:not(:last-of-type) {
+            margin-right: 3%
+        }
+    }
+        @media #{$maxMobile} {
+            float: none;
+    }
+        @media #{$maxSmall} {
+            margin-bottom: 20px
+    }
+}
+}

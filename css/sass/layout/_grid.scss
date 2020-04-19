@@ -1,0 +1,17 @@
+* {
+    @include prefixer(box-sizing, border-box, webkit moz);
+}
+.container {
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+    @media #{$minSmall} {
+        width: 750px;
+    }
+    @media #{$minMid} {
+        width: 970px;
+    }
+    @media #{$minLarg} {
+        width: 1170px;
+    }
+}
